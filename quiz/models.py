@@ -7,6 +7,6 @@ from django.db import models
 
 
 # class Answer(models.Model):
-#     option = models.CharField('opção', max_length=1)
+#     option = models.CharField('opcao', max_length=1)
 #     content = models.CharField('resposta', max_length=256)
 #     question = models.ForeignKey('Question', on_delete=models.CASCADE)

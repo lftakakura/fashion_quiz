@@ -1,21 +1,72 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Fashion Quiz</h1>
+<div class="container">
+    <!-- Page Content goes here -->
+    <div class="col s12" style="margin-top: 100px; margin-bottom: 200px; text-align: center">
+        <div class="col s12 m4 l8 offset-l3 offset-m3 offset-s3">
+            <div class="col s6">
+                <h1 class="black-text"> Fashion Quiz</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nullam in porttitor est. Nunc suscipit cursus turpis,
+                    vel fermentum justo viverra at. Sed a nisl et justo
+                    pharetra tempus et ut lorem. Ut tempus, nisl quis lacinia
+                    posuere, felis velit vulputate ante, sit amet vehicula dui
+                    sem a sapien. Nullam in sapien quis mi vehicula ullamcorper.
+                    Integer in tellus purus. Suspendisse potenti.<br><br>
 
-    <form action="{% url 'quiz:save_lead' %}" method="post">
-        {% csrf_token %}
-        <input type="hidden" name="ip" value="{{ lead_ip }}">
-        <input type="hidden" name="token" value="{{ lead_token }}">
+                    Sed non lacus et dolor mattis feugiat. Maecenas
+                    at aliquet metus. Etiam id nibh ut dolor porta sagittis.
+                    Praesent congue imperdiet metus placerat dictum. Donec
+                    in magna et odio luctus iaculis id nec erat. Phasellus
+                    porttitor, ligula non suscipit efficitur, nisl justo volutpat
+                    ligula, eu bibendum dui lectus eget metus. Nunc fermentum fringilla
+                    magna non aliquet. Nulla in mollis nulla. In quis mollis ligula, nec
+                    pellentesque risus. Integer in porta arcu.
+                </p>
+                <div class="row">
+                    <div class="col s6 m6 l6">
+                        <div class="card white white">
+                            <div class="card-content black-text">
+                                <span class="card-title text-teal text-lighten-2">Regras</span>
+                                <p>Rules text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6 m6 l6">
+                        <div class="card white white">
+                            <div class="card-content black-text">
+                                <span class="card-title text-teal text-lighten-2">Premiação</span>
+                                <p>Prize info</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 m3 l3" style="margin-top: 50px">
+                    <form action="{% url 'quiz:save_lead' %}" method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="ip" value="{{ lead_ip }}">
+                        <input type="hidden" name="token" value="{{ lead_token }}">
 
-        <input type="text" id="name" name="name" placeholder="Como seus amigos te chamam?">
-        <input type="email" id="email" name="email" placeholder="Seu e-mail">
+                        <input class="text-black" type="text" id="name" name="name" placeholder="Como seus amigos te chamam?">
+                        <input type="email" id="email" name="email" placeholder="Seu e-mail">
+                        <div class="row">
+                            <div class="col s6 m6 l6" style="text-align: left">
+                                    <input type="checkbox" id="accept-partners" name="accept-partners" value="True" checked/>
+                                    <label for="accept-partners" style="color: #3e3e3e">Aceito receber novidades de parceiros</label>
+                            </div>
+                        </div>
+                        <div class="col s6 m6 l6" style="margin-top: 100px">
+                                <button class="btn btn-large waves-effect waves-light" type="submit" name="action">Iniciar Quiz!
+                                </button>
+                            </div>
+                    </form>
+                </div>
 
-        <input type="checkbox" name="accept-partners" value="True" checked>
-        <label for="">Aceito receber novidades de parceiros</label>
-        <span>Fica tranquilo, também não gostamos de spam</span>
-
-
-        <input type="submit" value="Começar quiz">
-    </form>
-{% endblock %}
+                <!--</div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+    {% endblock %}

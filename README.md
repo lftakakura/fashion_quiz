@@ -15,6 +15,6 @@ TODO
 
 ## Authors
 
-- Luiz Felipe A. Takakura (lftakakura@gmail.com)
 - Elton Morais (moraisesc@gmail.com)
 - Emerson (<EMAIL>)
+- Luiz Felipe Takakura (lftakakura@gmail.com)
