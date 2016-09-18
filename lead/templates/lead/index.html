@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Fashion Quiz</h1>
+
+    <form action="{% url 'quiz:index' %}?t={{ lead_token }}" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="ip" value="{{ lead_ip }}">
+        <input type="hidden" name="token" value="{{ lead_token }}">
+
+        <input type="text" id="name" name="name" placeholder="Como seus amigos te chamam?">
+        <input type="email" id="email" name="email" placeholder="Seu e-mail">
+
+        <input type="submit" value="Começar quiz">
+    </form>
+{% endblock %}
