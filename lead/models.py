@@ -15,10 +15,6 @@ class Lead(models.Model):
     def __str__(self):
         return '{} ({})'.format(self.name, self.email)
 
-    def get_absolute_url(self):
-        from django.urls import reverse
-        return reverse('quiz:index', kwargs={'token': self.token})
-
 
 # class LeadAnswer(models.Model):
 #     lead = models.ForeignKey('Lead', on_delete=models.CASCADE)

@@ -3,14 +3,12 @@
 {% block content %}
     <h1>Fashion Quiz</h1>
 
-    <form action="{% url 'quiz:save_lead' %}" method="post">
+    <form action="{% url 'lead:create' %}" method="post">
         {% csrf_token %}
         <input type="hidden" name="ip" value="{{ lead_ip }}">
-        <input type="hidden" name="token" value="{{ lead_token }}">
 
         <input type="text" id="name" name="name" placeholder="Como seus amigos te chamam?">
         <input type="email" id="email" name="email" placeholder="Seu e-mail">
-
         <input type="checkbox" name="accept-partners" value="True" checked>
         <label for="">Aceito receber novidades de parceiros</label>
         <span>Fica tranquilo, também não gostamos de spam</span>

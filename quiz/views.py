@@ -1,33 +1,35 @@
 from django.shortcuts import get_object_or_404, redirect, render
+from django.urls import reverse
 
 from lead.models import Lead
+from quiz.models import Question, Choice
 
 
-def save_lead(request):
+def quiz_start(request, token):
+    lead = get_object_or_404(Lead, token=token)
+    questions = Question.objects.all()
+
+    return render(request, 'quiz/quiz_start.html', {
+        'lead': lead,
+        'questions': questions
+    })
+
+
+def quiz_save(request):
     if request.POST:
-        name = request.POST.get('name')
         token = request.POST.get('token')
-        accepted_partners = True
+        lead = get_object_or_404(Lead, token=token)
 
-        if request.POST.get('accept-partners') is None:
-            accepted_partners = False
+        # TODO fazer save
 
-        lead = Lead.objects.create(
-            name=name,
-            email=request.POST.get('email'),
-            token=token,
-            ip_address=request.POST.get('ip'),
-            accepted_partners=accepted_partners
-        )
-
-        lead.save()
-
-        return redirect(lead.get_absolute_url(), permanent=True)
+        return redirect(reverse('quiz:done',
+                        kwargs={'token': str(lead.token)}),
+                        permanent=True)
 
 
-def index(request, token):
+def quiz_done(request, token):
     lead = get_object_or_404(Lead, token=token)
 
-    return render(request, 'quiz/index.html', {
-        'name': lead.name
+    return render(request, 'quiz/quiz_done.html', {
+        'lead': lead
     })
