@@ -1,4 +1,28 @@
-/* TEMP: só para testar que funcionou */
-h1 {
-    color: blue;
+body::before {
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+    background-image: url('/static/images/2144.jpg');
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #3e3e3e;
+    opacity: 1 !important;
 }
