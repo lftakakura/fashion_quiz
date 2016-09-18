@@ -1,6 +1,9 @@
-## Install
+## Requirements
+ * Python 3.5.2
+ * pip (for Python 3)
 
-TODO
+## Install
+ * pip install -r requirements.txt
 
 ## Quickstart
 
@@ -13,5 +16,5 @@ TODO
 ## Authors
 
 - Luiz Felipe A. Takakura (lftakakura@gmail.com)
-- Elton (<EMAIL>)
+- Elton Morais (moraisesc@gmail.com)
 - Emerson (<EMAIL>)
