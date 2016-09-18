@@ -166,6 +166,8 @@ $RECYCLE.BIN/
 # proportion of contributors will probably not be using SublimeText
 # *.sublime-project
 
+.idea
+
 # sftp configuration file
 sftp-config.json
 
