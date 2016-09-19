@@ -27,12 +27,6 @@ SECRET_KEY = '&me(5%1e=16t$0j1f)eoxi-q_vqrv$=ent7es5v5wekq%0pil@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-# ALLOWED_HOSTS = [
-#     'localhost',
-#     'quizdoestilo',
-#     '.quizdoestilo-quiz-gama.getup.io',
-#     '.quizdoestilo.ml'
-# ]
 ALLOWED_HOSTS = ['*']
 
 # Application definition
@@ -136,4 +130,3 @@ if DEBUG:
     ]
 else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-    # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
