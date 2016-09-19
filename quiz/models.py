@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Question(models.Model):
-    question_title = models.CharField('pergunta', max_length=256)
+    question_title = models.TextField('pergunta')
     right_option = models.CharField(max_length=1)
 
     def __str__(self):

@@ -3,80 +3,80 @@
         "model":"quiz.question",
         "pk":  1,
         "fields": {
-            "question_title": "Pergunta 1",
-            "right_option": "a"
+            "question_title": "Sou uma releitura do estilo hippie dos anos 1970. Adoro usar calças flare, vestidos longos, cores fortes, franjas, florais, batas, mas com muito glamour. Meu visual permite a mistura de peças baratas com peças mais finas para reproduzir looks do passado. Geralmente você vai me ver com uma calça jeans desgastada de propósito, uma bata branca, chinelo e óculos escuros. E aí, já sabe qual é minha vibe?",
+            "right_option": "C"
         }
     },
     {
         "model":"quiz.question",
         "pk":  2,
         "fields": {
-            "question_title": "Pergunta 2",
-            "right_option": "a"
+            "question_title": "Eu sou um clássico e sempre estive presente na moda. Amo peças coringas que transmitem atitude e personalidade. Som alto, couro, jeans, tarrachas, spikes, pulseiras e colares metálicos, caveiras, botas, coturnos, bolsas e cintos, compõe meu look para ir curtir a vida com meus amigos. Também adoro camisas xadrez e com estampas ou frases das minhas bandas favoritas. Aumenta o volume e adivinha quem eu sou",
+            "right_option": "B"
         }
     },
     {
         "model":"quiz.question",
         "pk":  3,
         "fields": {
-            "question_title": "Pergunta 3",
-            "right_option": "a"
+            "question_title": "Sou um estilo atemporal que une liberdade e personalidade. Uma mistura de arte popular, música e política, meus looks são criados por pessoas que por meio da moda, expressam seu comportamento. Nasci na década de 1960 na Grã-Bretanha e fui muito popular nos anos 90. Gosto de usar jeans com barra dobrada, sobreposições, cores vibrantes e acessórios. Que estilo sou eu?",
+            "right_option": "D"
         }
     },
     {
         "model":"quiz.question",
         "pk":  4,
         "fields": {
-            "question_title": "Pergunta 4",
-            "right_option": "a"
+            "question_title": "Sou alternativo, casual, despojado e confortável, muito utilizado em diferentes tribos, nunca saio de moda. Cheguei no Brasil nos  anos 60 e fiquei muito famoso nos anos 70. Minhas roupas sempre tiveram uma aceitação muito grande: as famosas bermudas de nylon,  moletons estilosos, camisetas e regatas com estampas únicas de referência praiana. Amo roupas com extremo conforto que ressaltam liberdade de expressão e simplicidade, e muitas cores, vivas e alegres como o verão. Sou um estilo que veio pra ficar e essa questão está suave como a brisa do mar. Eu sou:",
+            "right_option": "C"
         }
     },
     {
         "model":"quiz.question",
         "pk":  5,
         "fields": {
-            "question_title": "Pergunta 5",
-            "right_option": "a"
+            "question_title": "Tenho 'atitude fashion', adoro a estética do passado, me afasto um pouco daquilo que é considerado tendência ou moderno, tenho cara de retrô. Sou clássico, com estilo de vida que remete aos anos 1920, 1930, 1940, 1950 e 1960, me expresso de diferentes maneiras: roupas, sapatos, acessórios, mobiliários e peças decorativas. Uso peças jeans, principalmente jaquetas e roupas inspiradas nas décadas anteriores, como estampa de poá (bolinhas), por exemplo. E aí? Já sabe qual estilo sou eu?",
+            "right_option": "A"
         }
     },
     {
         "model":"quiz.question",
         "pk":  6,
         "fields": {
-            "question_title": "Pergunta 6",
-            "right_option": "a"
+            "question_title": "Me inspirei na querida década de 1990. Tenho no armário várias peças super confortáveis e descoladas: camiseta com número, jaqueta colegial, moletom, tênis, boné, saia skater, shorts, blusas, leggings, bolsas… Alguns looks que adoro usar: boné e camiseta com número; jaqueta colegial, calça jeans e tênis esportivo; shorts e moletom…ou seja, me visto com estilo e conforto. Para sair com amigos e contrapor o visual, uso sapatos mais chiques e outros acessórios interessantes, porque isso me diferencia da galera que está indo para a academia rs Não precisa suar pra adivinhar essa, eu sou o estilo:",
+            "right_option": "B"
         }
     },
     {
         "model":"quiz.question",
         "pk":  7,
         "fields": {
-            "question_title": "Pergunta 7",
-            "right_option": "a"
+            "question_title": "Me caracterizo por misturar roupas do dia-a-dia, como jeans escuros, calças de corte clássico, vestidos e saias da estação e blusas básicas, com peças e acessórios mais glamourosos, como tecidos de seda, calças e bermudas de cetim, acessórios coloridos ou metálicos, e os mais diversos tipos de sapatos, coloridos ou em tons neutros, principalmente sapatilhas e sapatos mais chiques. Sou utilizado em qualquer ocasião, seja para encontrar os amigos, ir pro trabalho, balada, cinema ou teatro. Adoro óculos escuros, bolsas, echarpes, lenços e todo tipo de acessório. Meu look preferido é calça jeans, camiseta básica e blazer, que dá um toque elegante ao meu visual. Peças básicas com acessórios marcantes definem quem eu sou:",
+            "right_option": "D"
         }
     },
     {
         "model":"quiz.question",
         "pk":  8,
         "fields": {
-            "question_title": "Pergunta 8",
-            "right_option": "a"
+            "question_title": "Sou um estilo democrático, minhas peças podem ser utilizadas por pessoas de todas as idades, sem restrição. Meu estilo é muito adotado por quem trabalha em empresas e precisa de certa formalidade, por pessoas mais tradicionais ou que gostam de transmitir mais seriedade e maturidade. O tradicional tubinho preto, camisa e calça social, sapatos, é o que vem logo à cabeça quando vou me vestir. Essa é preto no branco, quem sou eu?",
+            "right_option": "A"
         }
     },
     {
         "model":"quiz.question",
         "pk":  9,
         "fields": {
-            "question_title": "Pergunta 9",
-            "right_option": "a"
+            "question_title": "Sou o estilo mais amado pelas celebridades. Arrojado e fascinante, estou sempre bem vestido para todas as ocasiões. Gosto de muito brilho, paetês, cores vibrantes e muito luxo e glamour. Meu estilo é repleto de romantismo e criatividade, me visto para arrasar! Quem sou eu na passarela com tapete vermelho do estilo?",
+            "right_option": "C"
         }
     },
     {
         "model":"quiz.question",
         "pk":  10,
         "fields": {
-            "question_title": "Pergunta 10",
-            "right_option": "a"
+            "question_title": "Sou um estilo despojado, descolado e despreocupado, antenado com as tendências e sei misturá-las com perfeição, compondo um visual sempre atual. Gosto de misturar esportivo e casual, mas não deixo de lado algumas peças mais clássicas, de forma discreta. Para montar meu look, não é necessário muito esforço, basta aproveitar as peças que tem no armário e usar a criatividade. Componho meu look com alguma peça que está em alta e faço sucesso nos barzinhos! Você viu que sou legal, então quem eu sou?",
+            "right_option": "D"
         }
     }
 ]

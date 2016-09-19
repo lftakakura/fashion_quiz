@@ -21,8 +21,6 @@ def lead_create(request):
         if request.POST.get('accept-partners') is None:
             accepted_partners = False
 
-        print request.POST.get('email')
-
         lead = Lead.objects.create(
             name=request.POST.get('name'),
             email=request.POST.get('email'),

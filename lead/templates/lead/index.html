@@ -1,61 +1,79 @@
 {% extends "base.html" %}
 
 {% block content %}
-<header class="cabecalho">
-    <h1>Quiz do estilo</h1>
-    <hr>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. <p>
-</header>
-
-<div class="col s6 m3 l3" style="margin-top: 50px">
-    <form action="{% url 'lead:create' %}" method="post">
-        {% csrf_token %}
-        <input type="hidden" name="ip" value="{{ lead_ip }}">
-        <input type="hidden" name="token" value="{{ lead_token }}">
+    <section class="container">
+        <header>
+            <h1>Quiz do estilo</h1>
+            <hr>
+            <p>Estamos fazendo um projeto acadêmico e precisamos muito da sua ajuda =)</p>
+            <p>Você testa seus conhecimentos e concorre a R$ 100,00. Casual, Vintage, Surf, Street, Esportivo, você conhece esses estilos? Se você acertar todas, no menor tempo, ganha essa grana pra comprar umas roupas novas! Participe e boa sorte:<p>
+        </header>
 
         <div class="row">
-            <div class="col s8">
-                <input class="text-white" type="text" id="name" name="name" placeholder="Nome">
-            </div>
-            <div class="col s4">
-                <input class="text-white" type="number" id="age" name="age" placeholder="Idade">
-            </div>
             <div class="col s12">
-                <input class="text-white" type="text" id="email" name="email" placeholder="Email para contato">
-            </div>
-            <div class="col s4">
-                <input name="gender" type="radio" id="1" value="0" /><label for="1">Masculino</label>
-            </div>
-            <div class="col s4" style="text-align: left">
-                <input name="gender" type="radio" id="2" value="1" /><label for="2">Feminino</label>
+                <form action="{% url 'lead:create' %}" method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="ip" value="{{ lead_ip }}">
+                    <input type="hidden" name="token" value="{{ lead_token }}">
+
+                    <div class="row">
+                        <div class="input-field col s8">
+                            <input class="text-white" type="text" id="name" name="name">
+                            <label for="name">Como você se chama?</label>
+                        </div>
+                        <div class="input-field col s4">
+                            <input class="text-white" type="number" id="age" name="age">
+                            <label for="age">Sua idade</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input class="text-white" type="text" id="email" name="email">
+                            <label for="email">Seu e-mail</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s6">
+                            <input name="gender" type="radio" id="masculino" value="0">
+                            <label for="masculino">Masculino</label>
+                        </div>
+                        <div class="col s6" style="text-align: left">
+                            <input name="gender" type="radio" id="feminino" value="1">
+                            <label for="feminino">Feminino</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <input type="checkbox" id="accept-partners" name="accept-partners" value="True" checked>
+                            <label for="accept-partners">Aceito receber novidades de parceiros</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 center-align">
+                            <button class="btn btn-large waves-effect waves-light" type="submit" name="action">Iniciar Quiz!</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="row">
-            <div class="col s12 m12 l12" style="text-align: left">
-                <input type="checkbox" id="accept-partners" name="accept-partners" value="True" checked/>
-                <label for="accept-partners" style="color: white">Aceito receber novidades de parceiros</label>
+
+        {# <div class="col s6 m3 l3"></div> #}
+        <hr>
+        <footer class="rodape main-footer">
+            <div class="regras">
+                <h2>Regulamento</h2>
+                <ol>
+                    <li>Estamos fazendo um projeto acadêmico e precisamos muito da sua ajuda =)</li>
+                    <li>Você vai receber 100 reais se ganhar o desafio!</li>
+                    <li>O objetivo é acertar todas as questões do Quiz do Estilo no menor tempo.</li>
+                    <li>Após a última questão, você terá a opção de compartilhar o quiz nas suas redes sociais, e isso será um fator de desempate.</li>
+                    <li>Cada rede social que você compartilha, você ganha 1 ponto a mais para concorrer.</li>
+                    <li>Você deve inserir um e-mail válido para iniciar o quiz, pois entraremos em contato por ele caso você seja o vencedor. Fica de olho!</li>
+                    <li>O resultado será divulgado no próximo sábado (24/9/2016), por e-mail.</li>
+                    <li>Então corre lá, faz o quiz, compartilha com seus amigos e boa sorte! ;)</li>
+                </ol>
             </div>
-        </div>
-        <div class="col s12 m6 l6" style="text-align: center; margin-top: 50px">
-            <button class="btn btn-large waves-effect waves-light" type="submit" name="action">Iniciar Quiz!</button>
-        </div>
-    </form>
-</div>
-
-<hr>
-
-<footer class="rodape main-footer">
-    <div class="regras">
-        <h2>Como funciona</h2>
-        <ol>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        </ol>
-    </div>
-</footer>
-
+        </footer>
+    </section>
 {% endblock %}
+

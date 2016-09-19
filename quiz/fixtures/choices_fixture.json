@@ -4,8 +4,8 @@
         "pk": 1,
         "fields": {
             "question": 1,
-            "choice_letter": "a",
-            "choice_text": "Opção a da Pergunta 1"
+            "choice_letter": "A",
+            "choice_text": "Surfwear"
         }
     },
     {
@@ -13,8 +13,8 @@
         "pk": 2,
         "fields": {
             "question": 1,
-            "choice_letter": "b",
-            "choice_text": "Opção b da Pergunta 1"
+            "choice_letter": "B",
+            "choice_text": "Glam"
         }
     },
     {
@@ -22,8 +22,8 @@
         "pk": 3,
         "fields": {
             "question": 1,
-            "choice_letter": "c",
-            "choice_text": "Opção c da Pergunta 1"
+            "choice_letter": "C",
+            "choice_text": "Hippie Chic"
         }
     },
     {
@@ -31,17 +31,8 @@
         "pk": 4,
         "fields": {
             "question": 1,
-            "choice_letter": "d",
-            "choice_text": "Opção d da Pergunta 1"
-        }
-    },
-    {
-        "model": "quiz.choice",
-        "pk": 5,
-        "fields": {
-            "question": 1,
-            "choice_letter": "e",
-            "choice_text": "Opção e da Pergunta 1"
+            "choice_letter": "D",
+            "choice_text": "Pop"
         }
     },
 
@@ -50,8 +41,8 @@
         "pk": 6,
         "fields": {
             "question": 2,
-            "choice_letter": "a",
-            "choice_text": "Opção a da Pergunta 2"
+            "choice_letter": "A",
+            "choice_text": "Punk"
         }
     },
     {
@@ -59,8 +50,8 @@
         "pk": 7,
         "fields": {
             "question": 2,
-            "choice_letter": "b",
-            "choice_text": "Opção b da Pergunta 2"
+            "choice_letter": "B",
+            "choice_text": "Rocker"
         }
     },
     {
@@ -68,8 +59,8 @@
         "pk": 8,
         "fields": {
             "question": 2,
-            "choice_letter": "c",
-            "choice_text": "Opção c da Pergunta 2"
+            "choice_letter": "C",
+            "choice_text": "Cool"
         }
     },
     {
@@ -77,17 +68,8 @@
         "pk": 9,
         "fields": {
             "question": 2,
-            "choice_letter": "d",
-            "choice_text": "Opção d da Pergunta 2"
-        }
-    },
-    {
-        "model": "quiz.choice",
-        "pk": 10,
-        "fields": {
-            "question": 2,
-            "choice_letter": "e",
-            "choice_text": "Opção e da Pergunta 2"
+            "choice_letter": "D",
+            "choice_text": "Pop"
         }
     },
 
@@ -96,8 +78,8 @@
         "pk": 11,
         "fields": {
             "question": 3,
-            "choice_letter": "a",
-            "choice_text": "Opção a da Pergunta 3"
+            "choice_letter": "A",
+            "choice_text": "Surfwear"
         }
     },
     {
@@ -105,8 +87,8 @@
         "pk": 12,
         "fields": {
             "question": 3,
-            "choice_letter": "b",
-            "choice_text": "Opção b da Pergunta 3"
+            "choice_letter": "B",
+            "choice_text": "Vintage"
         }
     },
     {
@@ -114,8 +96,8 @@
         "pk": 13,
         "fields": {
             "question": 3,
-            "choice_letter": "c",
-            "choice_text": "Opção c da Pergunta 3"
+            "choice_letter": "C",
+            "choice_text": "Punk"
         }
     },
     {
@@ -123,17 +105,8 @@
         "pk": 14,
         "fields": {
             "question": 3,
-            "choice_letter": "d",
-            "choice_text": "Opção d da Pergunta 3"
-        }
-    },
-    {
-        "model": "quiz.choice",
-        "pk": 15,
-        "fields": {
-            "question": 3,
-            "choice_letter": "e",
-            "choice_text": "Opção e da Pergunta 3"
+            "choice_letter": "D",
+            "choice_text": "StreetWear"
         }
     },
 
@@ -142,8 +115,8 @@
         "pk": 16,
         "fields": {
             "question": 4,
-            "choice_letter": "a",
-            "choice_text": "Opção a da Pergunta 4"
+            "choice_letter": "A",
+            "choice_text": "Casual Chique"
         }
     },
     {
@@ -151,8 +124,8 @@
         "pk": 17,
         "fields": {
             "question": 4,
-            "choice_letter": "b",
-            "choice_text": "Opção b da Pergunta 4"
+            "choice_letter": "B",
+            "choice_text": "Esportivo"
         }
     },
     {
@@ -160,8 +133,8 @@
         "pk": 18,
         "fields": {
             "question": 4,
-            "choice_letter": "c",
-            "choice_text": "Opção c da Pergunta 4"
+            "choice_letter": "C",
+            "choice_text": "Surfwear"
         }
     },
     {
@@ -169,17 +142,8 @@
         "pk": 19,
         "fields": {
             "question": 4,
-            "choice_letter": "d",
-            "choice_text": "Opção d da Pergunta 4"
-        }
-    },
-    {
-        "model": "quiz.choice",
-        "pk": 20,
-        "fields": {
-            "question": 4,
-            "choice_letter": "e",
-            "choice_text": "Opção e da Pergunta 4"
+            "choice_letter": "D",
+            "choice_text": "Cool"
         }
     },
 
@@ -188,8 +152,8 @@
         "pk": 21,
         "fields": {
             "question": 5,
-            "choice_letter": "a",
-            "choice_text": "Opção a da Pergunta 5"
+            "choice_letter": "A",
+            "choice_text": "Vintage"
         }
     },
     {
@@ -197,8 +161,8 @@
         "pk": 22,
         "fields": {
             "question": 5,
-            "choice_letter": "b",
-            "choice_text": "Opção b da Pergunta 5"
+            "choice_letter": "B",
+            "choice_text": "Old School"
         }
     },
     {
@@ -206,8 +170,8 @@
         "pk": 23,
         "fields": {
             "question": 5,
-            "choice_letter": "c",
-            "choice_text": "Opção c da Pergunta 5"
+            "choice_letter": "C",
+            "choice_text": "Clássico"
         }
     },
     {
@@ -215,17 +179,8 @@
         "pk": 24,
         "fields": {
             "question": 5,
-            "choice_letter": "d",
-            "choice_text": "Opção d da Pergunta 5"
-        }
-    },
-    {
-        "model": "quiz.choice",
-        "pk": 25,
-        "fields": {
-            "question": 5,
-            "choice_letter": "e",
-            "choice_text": "Opção e da Pergunta 5"
+            "choice_letter": "D",
+            "choice_text": "Activewear"
         }
     },
 
@@ -234,8 +189,8 @@
         "pk": 26,
         "fields": {
             "question": 6,
-            "choice_letter": "a",
-            "choice_text": "Opção a da Pergunta 6"
+            "choice_letter": "A",
+            "choice_text": "Cool"
         }
     },
     {
@@ -243,8 +198,8 @@
         "pk": 27,
         "fields": {
             "question": 6,
-            "choice_letter": "b",
-            "choice_text": "Opção b da Pergunta 6"
+            "choice_letter": "B",
+            "choice_text": "Esportivo"
         }
     },
     {
@@ -252,8 +207,8 @@
         "pk": 28,
         "fields": {
             "question": 6,
-            "choice_letter": "c",
-            "choice_text": "Opção c da Pergunta 6"
+            "choice_letter": "C",
+            "choice_text": "StreetWear"
         }
     },
     {
@@ -261,17 +216,8 @@
         "pk": 29,
         "fields": {
             "question": 6,
-            "choice_letter": "d",
-            "choice_text": "Opção d da Pergunta 6"
-        }
-    },
-    {
-        "model": "quiz.choice",
-        "pk": 30,
-        "fields": {
-            "question": 6,
-            "choice_letter": "e",
-            "choice_text": "Opção e da Pergunta 6"
+            "choice_letter": "D",
+            "choice_text": "Activewear"
         }
     },
 
@@ -280,8 +226,8 @@
         "pk": 31,
         "fields": {
             "question": 7,
-            "choice_letter": "a",
-            "choice_text": "Opção a da Pergunta 7"
+            "choice_letter": "A",
+            "choice_text": "Streetwear"
         }
     },
     {
@@ -289,8 +235,8 @@
         "pk": 32,
         "fields": {
             "question": 7,
-            "choice_letter": "b",
-            "choice_text": "Opção b da Pergunta 7"
+            "choice_letter": "B",
+            "choice_text": "Rocker"
         }
     },
     {
@@ -298,8 +244,8 @@
         "pk": 33,
         "fields": {
             "question": 7,
-            "choice_letter": "c",
-            "choice_text": "Opção c da Pergunta 7"
+            "choice_letter": "C",
+            "choice_text": "Glam"
         }
     },
     {
@@ -307,17 +253,8 @@
         "pk": 34,
         "fields": {
             "question": 7,
-            "choice_letter": "d",
-            "choice_text": "Opção d da Pergunta 7"
-        }
-    },
-    {
-        "model": "quiz.choice",
-        "pk": 35,
-        "fields": {
-            "question": 7,
-            "choice_letter": "e",
-            "choice_text": "Opção e da Pergunta 7"
+            "choice_letter": "D",
+            "choice_text": "Casual Chique"
         }
     },
 
@@ -326,8 +263,8 @@
         "pk": 36,
         "fields": {
             "question": 8,
-            "choice_letter": "a",
-            "choice_text": "Opção a da Pergunta 8"
+            "choice_letter": "A",
+            "choice_text": "Clássico"
         }
     },
     {
@@ -335,8 +272,8 @@
         "pk": 37,
         "fields": {
             "question": 8,
-            "choice_letter": "b",
-            "choice_text": "Opção b da Pergunta 8"
+            "choice_letter": "B",
+            "choice_text": "Casual Chique"
         }
     },
     {
@@ -344,8 +281,8 @@
         "pk": 38,
         "fields": {
             "question": 8,
-            "choice_letter": "c",
-            "choice_text": "Opção c da Pergunta 8"
+            "choice_letter": "C",
+            "choice_text": "Activewear"
         }
     },
     {
@@ -353,17 +290,8 @@
         "pk": 39,
         "fields": {
             "question": 8,
-            "choice_letter": "d",
-            "choice_text": "Opção d da Pergunta 8"
-        }
-    },
-    {
-        "model": "quiz.choice",
-        "pk": 40,
-        "fields": {
-            "question": 8,
-            "choice_letter": "e",
-            "choice_text": "Opção e da Pergunta 8"
+            "choice_letter": "D",
+            "choice_text": "Streetwear"
         }
     },
 
@@ -372,8 +300,8 @@
         "pk": 41,
         "fields": {
             "question": 9,
-            "choice_letter": "a",
-            "choice_text": "Opção a da Pergunta 9"
+            "choice_letter": "A",
+            "choice_text": "Pop"
         }
     },
     {
@@ -381,8 +309,8 @@
         "pk": 42,
         "fields": {
             "question": 9,
-            "choice_letter": "b",
-            "choice_text": "Opção b da Pergunta 9"
+            "choice_letter": "B",
+            "choice_text": "Activewear"
         }
     },
     {
@@ -390,8 +318,8 @@
         "pk": 43,
         "fields": {
             "question": 9,
-            "choice_letter": "c",
-            "choice_text": "Opção c da Pergunta 9"
+            "choice_letter": "C",
+            "choice_text": "Glam"
         }
     },
     {
@@ -399,17 +327,8 @@
         "pk": 44,
         "fields": {
             "question": 9,
-            "choice_letter": "d",
-            "choice_text": "Opção d da Pergunta 9"
-        }
-    },
-    {
-        "model": "quiz.choice",
-        "pk": 45,
-        "fields": {
-            "question": 9,
-            "choice_letter": "e",
-            "choice_text": "Opção e da Pergunta 9"
+            "choice_letter": "D",
+            "choice_text": "Rocker"
         }
     },
 
@@ -418,8 +337,8 @@
         "pk": 46,
         "fields": {
             "question": 10,
-            "choice_letter": "a",
-            "choice_text": "Opção a da Pergunta 10"
+            "choice_letter": "A",
+            "choice_text": "Vintage"
         }
     },
     {
@@ -427,8 +346,8 @@
         "pk": 47,
         "fields": {
             "question": 10,
-            "choice_letter": "b",
-            "choice_text": "Opção b da Pergunta 10"
+            "choice_letter": "B",
+            "choice_text": "Old School"
         }
     },
     {
@@ -436,8 +355,8 @@
         "pk": 48,
         "fields": {
             "question": 10,
-            "choice_letter": "c",
-            "choice_text": "Opção c da Pergunta 10"
+            "choice_letter": "C",
+            "choice_text": "Clássico"
         }
     },
     {
@@ -445,17 +364,8 @@
         "pk": 49,
         "fields": {
             "question": 10,
-            "choice_letter": "d",
-            "choice_text": "Opção d da Pergunta 10"
-        }
-    },
-    {
-        "model": "quiz.choice",
-        "pk": 50,
-        "fields": {
-            "question": 10,
-            "choice_letter": "e",
-            "choice_text": "Opção e da Pergunta 10"
+            "choice_letter": "D",
+            "choice_text": "Cool"
         }
     }
 ]
