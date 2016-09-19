@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
+h2{
+	font-size: 3rem;
+	font-family: 'Special Elite', cursive;
+}
+
+.content li{
+	margin-bottom: 40px;
+	width: 449px;
+	height: 253px;
+}
+
+.questions{
+	width: 10%;
+	font-size: 30px;
+}
+
+.campoQuiz{
+	height: 240px;
+	overflow: hidden;
+}

@@ -1,24 +1,29 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Olá, {{ lead.name }}. Você iniciou o quiz!</h1>
+<h1>Olá, {{ lead.name }}. Você iniciou o quiz!</h1>
 
 
-    <form action="{% url 'quiz:save' %}" method="post">
-        {% csrf_token %}
+<form action="{% url 'quiz:save' %}" method="post">
+    {% csrf_token %}
 
-        <input type="hidden" name="token" value="{{ lead.token }}">
+    <input type="hidden" name="token" value="{{ lead.token }}">
 
+    <ul>
         {% for question in questions %}
-            <div>
-                {{ question.question_title }} <br>
-
-                {% for choice in question.choice_set.all %}
-                    <input type="radio" name="question-{{ question.id }}" value="{{ choice.choice_letter }}">{{ choice.choice_text }}
-                {% endfor %}
+        <li>
+            <label>{{ forloop.counter }} - {{ question.question_title }}</label>
+            {% for choice in question.choice_set.all %}
+            <div class="col s12">
+                <input name="question-{{ question.id }}" id="choice-{{ choice.id }}" type="radio" value="{{ choice.choice_letter }}" /><label for="choice-{{ choice.id }}">{{ choice.choice_text }}</label>
             </div>
+            {% endfor %}
+        </li>
+        <br>
         {% endfor %}
-
-        <input type="submit" value="Finalizar">
-    </form>
+    </ul>
+    <div class="col s12 m6 l6" style="text-align: center; margin-top: 50px">
+            <button class="btn btn-large waves-effect waves-light" type="submit" name="action">Finalizar</button>
+    </div>
+</form>
 {% endblock %}

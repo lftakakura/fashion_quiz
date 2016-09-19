@@ -16,15 +16,18 @@ def index(request):
 
 def lead_create(request):
     if request.POST:
-        name = request.POST.get('name')
         accepted_partners = True
 
         if request.POST.get('accept-partners') is None:
             accepted_partners = False
 
+        print request.POST.get('email')
+
         lead = Lead.objects.create(
-            name=name,
+            name=request.POST.get('name'),
             email=request.POST.get('email'),
+            gender=request.POST.get('gender'),
+            age=request.POST.get('age'),
             ip_address=request.POST.get('ip'),
             accepted_partners=accepted_partners
         )

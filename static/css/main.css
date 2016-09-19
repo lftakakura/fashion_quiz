@@ -9,7 +9,7 @@ body::before {
     bottom: 0;
     top: 0;
     position: fixed;
-    background-image: url('/static/images/2144.jpg');
+    background-image: url('/static/images/girl.jpg');
 }
 
 body {
@@ -22,7 +22,40 @@ body {
     flex: 1 0 auto;
   }
 
+.page-footer {
+    background-color: #1a1716 !important;
+    padding-top: 0 !important;
+}
+
 ::-webkit-input-placeholder { /* WebKit browsers */
-    color: #3e3e3e;
+    color: white;
     opacity: 1 !important;
 }
+
+/* label color */
+   .input-field label {
+     color: white;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: white;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: white;
+   }
