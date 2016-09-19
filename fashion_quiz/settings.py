@@ -83,8 +83,8 @@ DATABASES = {
         'NAME': os.environ['DATABASE_NAME'],
         'USER': os.environ['DATABASE_USER'],
         'PASSWORD': os.environ['DATABASE_PASSWORD'],
-        'HOST': '',
-        'PORT': '',
+        'HOST': 'postgresql',
+        'PORT': '5432',
     }
 }
 
