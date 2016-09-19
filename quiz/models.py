@@ -15,4 +15,6 @@ class Choice(models.Model):
     choice_text = models.CharField(max_length=256)
 
     def __str__(self):
-        return '{}: {}'.format(self.choice_letter, self.choice_text)
+        return '{} - Resposta: {}: {}'.format(
+            self.question.question_title, self.choice_letter, self.choice_text
+        )
