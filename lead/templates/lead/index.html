@@ -14,21 +14,20 @@
                 <form action="{% url 'lead:create' %}" method="post">
                     {% csrf_token %}
                     <input type="hidden" name="ip" value="{{ lead_ip }}">
-                    <input type="hidden" name="token" value="{{ lead_token }}">
 
                     <div class="row">
                         <div class="input-field col s8">
-                            <input class="text-white" type="text" id="name" name="name">
+                            <input class="text-white" type="text" id="name" name="name" required>
                             <label for="name">Como você se chama?</label>
                         </div>
                         <div class="input-field col s4">
-                            <input class="text-white" type="number" id="age" name="age">
+                            <input class="text-white" type="number" id="age" name="age" required>
                             <label for="age">Sua idade</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
-                            <input class="text-white" type="text" id="email" name="email">
+                            <input class="text-white" type="text" id="email" name="email" required>
                             <label for="email">Seu e-mail</label>
                         </div>
                     </div>

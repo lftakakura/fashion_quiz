@@ -16,25 +16,34 @@ def index(request):
 
 def lead_create(request):
     if request.POST:
-        accepted_partners = True
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        age = request.POST.get('age')
+        gender = request.POST.get('gender')
+        accepted_partners = request.POST.get('accept-partners')
+        ip_address = request.POST.get('ip')
 
-        if request.POST.get('accept-partners') is None:
+        if accepted_partners is None:
             accepted_partners = False
 
-        lead = Lead.objects.create(
-            name=request.POST.get('name'),
-            email=request.POST.get('email'),
-            gender=request.POST.get('gender'),
-            age=request.POST.get('age'),
-            ip_address=request.POST.get('ip'),
-            accepted_partners=accepted_partners
-        )
+        if name and email and gender and age is not None:
+            lead = Lead.objects.create(
+                name=name,
+                email=email,
+                age=age,
+                gender=gender,
+                ip_address=ip_address,
+                accepted_partners=accepted_partners
+            )
 
-        lead.save()
+            lead.save()
 
-        return redirect(reverse('quiz:start',
-                        kwargs={'token': str(lead.token)}),
-                        permanent=True)
+            return redirect(reverse('quiz:start',
+                            kwargs={'token': str(lead.token)}),
+                            permanent=True)
+        else:
+            # TODO: Redirecionar para páginas de erro
+            return redirect(reverse('lead:index', permanent=True))
 
 
 def get_client_ip(request):
