@@ -77,6 +77,13 @@ WSGI_APPLICATION = 'fashion_quiz.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': 'mydatabase',
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': os.environ['DATABASE_ENGINE'],

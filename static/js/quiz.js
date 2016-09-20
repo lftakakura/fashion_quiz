@@ -14,4 +14,9 @@
             $("#end_btn").show();
         }
     });
+    $('#clock').countdown('2016/09/24', function(event) {
+  $(this).html(event.strftime('%D Dias %H:%M:%S'));
 });
+});
+
+

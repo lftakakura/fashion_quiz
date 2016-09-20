@@ -12,11 +12,12 @@ body::before {
     background-image: url('/static/images/girl.jpg');
 }
 
-section.container {
+section {
     background-color: rgba(0, 0, 0, 0.53);
     color: white;
     padding: 15px 15px 15px 15px;
-    margin-top: 20px;
+    margin: 5% 10% 5% 10%;
+    border-radius: 2px;
 }
 
 body {
@@ -27,6 +28,10 @@ body {
 
   main {
     flex: 1 0 auto;
+  }
+
+  li {
+    margin-bottom: 20px;
   }
 
 .page-footer {
@@ -141,6 +146,10 @@ color: white !important;
     background-color: orange;
 }
 
+.btn:actives, .btn-large:active {
+    background-color: orange;
+}
+
 a {
 color: orange;
 }
@@ -152,3 +161,20 @@ color: orange;
 .text_orange {
 color: orange;
 }
+
+@media only screen and (max-width: 599px) {
+        section {
+        padding: 15px 15px 15px 15px;
+        margin: 0;
+    }
+
+    footer {
+        margin-top: 0 !important;
+    }
+
+    .my-title {
+        text-align: center;
+    }
+}
+
+

@@ -42,7 +42,17 @@ def quiz_save(request):
 
 def quiz_done(request, token):
     lead = get_object_or_404(Lead, token=token)
+    answers = list(LeadAnswer.objects.filter(lead=lead))
+    total_answers = len(answers)
+    correct_answers = 0
+
+    for ans in answers:
+        if (ans.is_correct):
+            correct_answers += 1
 
     return render(request, 'quiz/quiz_done.html', {
-        'lead': lead
+        'lead': lead,
+        'total_answers': total_answers,
+        'correct_answers': correct_answers
+
     })
