@@ -1,29 +1,45 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Olá, {{ lead.name }}. Você iniciou o quiz!</h1>
+<section class="container">
+    <header>
+        <h1 style="text-align: center;">O Quiz está valendo!</h1>
+        <hr>
+    </header>
 
+    <div class="row">
+        <div class="col s12">
+            <form action="{% url 'quiz:save' %}" method="post">
+                {% csrf_token %}
 
-<form action="{% url 'quiz:save' %}" method="post">
-    {% csrf_token %}
+                <input type="hidden" name="token" value="{{ lead.token }}">
 
-    <input type="hidden" name="token" value="{{ lead.token }}">
+                <ul style="margin-top: 50px">
+                    {% for question in questions %}
+                    <li id="q-{{ forloop.counter }}" hidden>
+                        <div class="col s12" style="text-align: center; margin-bottom: 50px">
+                            <label style="font-size: 1.5em">{{ forloop.counter }} - {{ question.question_title }}</label>
+                        </div>
+                        <div class="row">
+                            {% for choice in question.choice_set.all %}
+                            <div class="col s12" style="padding-left: 40%">
+                                <input required style="font-size: 1.0em" name="question-{{ question.id }}" id="choice-{{ choice.id }}" type="radio" value="{{ choice.choice_letter }}" /><label for="choice-{{ choice.id }}">{{ choice.choice_text }}</label>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <br>
 
-    <ul>
-        {% for question in questions %}
-        <li>
-            <label>{{ forloop.counter }} - {{ question.question_title }}</label>
-            {% for choice in question.choice_set.all %}
-            <div class="col s12">
-                <input name="question-{{ question.id }}" id="choice-{{ choice.id }}" type="radio" value="{{ choice.choice_letter }}" /><label for="choice-{{ choice.id }}">{{ choice.choice_text }}</label>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <div hidden id="end_btn" class="col s12" style="text-align: center; margin-top: 50px">
+                    <button class="btn btn-large waves-effect waves-light" type="submit" name="action">Finalizar</button>
+                </div>
+            </form>
+            <div id="next_btn" class="col s12" style="text-align: center; margin-top: 50px">
+                <button class="btn btn-large waves-effect waves-light" href>Próxima</button>
             </div>
-            {% endfor %}
-        </li>
-        <br>
-        {% endfor %}
-    </ul>
-    <div class="col s12 m6 l6" style="text-align: center; margin-top: 50px">
-            <button class="btn btn-large waves-effect waves-light" type="submit" name="action">Finalizar</button>
+            {% endblock %}
+        </div>
     </div>
-</form>
-{% endblock %}
+</section>

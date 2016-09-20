@@ -8,10 +8,12 @@ from quiz.models import Question, Choice
 def quiz_start(request, token):
     lead = get_object_or_404(Lead, token=token)
     questions = Question.objects.all()
+    q_number = 1
 
     return render(request, 'quiz/quiz_start.html', {
         'lead': lead,
-        'questions': questions
+        'questions': questions,
+        'q_number': q_number
     })
 
 
