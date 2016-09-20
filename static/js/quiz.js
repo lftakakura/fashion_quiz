@@ -9,7 +9,7 @@
         q_number += 1;
         $("#q-"+q_number).show();
 
-        if (q_number == 2) {
+        if (q_number == 10) {
             $("#next_btn").hide();
             $("#end_btn").show();
         }
