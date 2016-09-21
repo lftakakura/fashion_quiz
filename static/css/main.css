@@ -166,7 +166,7 @@ color: orange;
         section {
         padding: 15px 15px 15px 15px;
         margin: 0;
-        height: 100%;
+        min-height: 100%;
     }
 
     footer {
