@@ -26,7 +26,7 @@ def quiz_save(request):
             is_correct = False
             choice = request.POST.get('question-{}'.format(question.id))
 
-            if choice == question.right_option:
+            if choice and choice == question.right_option:
                 is_correct = True
 
             LeadAnswer.objects.create(

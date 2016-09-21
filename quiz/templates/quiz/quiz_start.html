@@ -23,8 +23,8 @@
                         <div class="row">
                             <div class="col s12">
                                 {% for choice in question.choice_set.all %}
-                            <div class="col s12" style="padding-left: 45%;">
-                                <input required style="font-size: 1.0em" name="question-{{ question.id }}" id="choice-{{ choice.id }}" type="radio" value="{{ choice.choice_letter }}" /><label for="choice-{{ choice.id }}" style="font-size: 1.5em">{{ choice.choice_text }}</label>
+                            <div class="col s12" style="padding-left: 40%;">
+                                <input style="font-size: 0.5em" name="question-{{ question.id }}" id="choice-{{ choice.id }}" type="radio" value="{{ choice.choice_letter }}" /><label for="choice-{{ choice.id }}" style="font-size: 1.3em">{{ choice.choice_text }}</label>
                             </div>
                             {% endfor %}
                             </div>
